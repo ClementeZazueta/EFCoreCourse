@@ -1,0 +1,12 @@
+C:\Users\carlos.zazueta\source\repos\WizLib\WizLib_Model\bin\Debug\net5.0\WizLib_Model.deps.json
+C:\Users\carlos.zazueta\source\repos\WizLib\WizLib_Model\bin\Debug\net5.0\WizLib_Model.dll
+C:\Users\carlos.zazueta\source\repos\WizLib\WizLib_Model\bin\Debug\net5.0\ref\WizLib_Model.dll
+C:\Users\carlos.zazueta\source\repos\WizLib\WizLib_Model\bin\Debug\net5.0\WizLib_Model.pdb
+C:\Users\carlos.zazueta\source\repos\WizLib\WizLib_Model\obj\Debug\net5.0\WizLib_Model.csproj.AssemblyReference.cache
+C:\Users\carlos.zazueta\source\repos\WizLib\WizLib_Model\obj\Debug\net5.0\WizLib_Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carlos.zazueta\source\repos\WizLib\WizLib_Model\obj\Debug\net5.0\WizLib_Model.AssemblyInfoInputs.cache
+C:\Users\carlos.zazueta\source\repos\WizLib\WizLib_Model\obj\Debug\net5.0\WizLib_Model.AssemblyInfo.cs
+C:\Users\carlos.zazueta\source\repos\WizLib\WizLib_Model\obj\Debug\net5.0\WizLib_Model.csproj.CoreCompileInputs.cache
+C:\Users\carlos.zazueta\source\repos\WizLib\WizLib_Model\obj\Debug\net5.0\WizLib_Model.dll
+C:\Users\carlos.zazueta\source\repos\WizLib\WizLib_Model\obj\Debug\net5.0\ref\WizLib_Model.dll
+C:\Users\carlos.zazueta\source\repos\WizLib\WizLib_Model\obj\Debug\net5.0\WizLib_Model.pdb
