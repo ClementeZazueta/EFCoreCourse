@@ -82,5 +82,63 @@ namespace WizLib.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
+        public IActionResult CreateMultiple2()
+        {
+            var categories = new List<Category>();
+            for (int i = 0; i < 2; i++)
+            {
+                categories.Add(new Category { Name = Guid.NewGuid().ToString() });
+                //_context.Categories.Add(new Category
+                //{
+                //    Name = Guid.NewGuid().ToString()
+                //});
+            }
+
+            _context.AddRange(categories);
+            _context.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult CreateMultiple5()
+        {
+            var categories = new List<Category>();
+            for (int i = 0; i < 5; i++)
+            {
+                categories.Add(new Category { Name = Guid.NewGuid().ToString() });
+            }
+
+            _context.AddRange(categories);
+            _context.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult RemoveMultiple2()
+        {
+            var categories = _context.Categories
+                .OrderByDescending(c => c.Category_Id)
+                .Take(2)
+                .ToList() as IEnumerable<Category>;
+
+            _context.RemoveRange(categories);
+            _context.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult RemoveMultiple5()
+        {
+            var categories = _context.Categories
+                .OrderByDescending(c => c.Category_Id)
+                .Take(5)
+                .ToList() as IEnumerable<Category>;
+
+            _context.RemoveRange(categories);
+            _context.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
