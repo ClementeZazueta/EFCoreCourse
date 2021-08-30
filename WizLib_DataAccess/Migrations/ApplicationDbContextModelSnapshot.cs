@@ -173,7 +173,7 @@ namespace WizLib_DataAccess.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("BookDetail_Id")
+                    b.Property<int?>("BookDetail_Id")
                         .HasColumnType("int");
 
                     b.Property<string>("ISBN")
@@ -194,7 +194,8 @@ namespace WizLib_DataAccess.Migrations
                     b.HasKey("Book_Id");
 
                     b.HasIndex("BookDetail_Id")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[BookDetail_Id] IS NOT NULL");
 
                     b.HasIndex("Publisher_Id");
 
@@ -342,9 +343,7 @@ namespace WizLib_DataAccess.Migrations
                 {
                     b.HasOne("WizLib_Model.Models.Fluent_BookDetail", "Fluent_BookDetail")
                         .WithOne("Fluent_Book")
-                        .HasForeignKey("WizLib_Model.Models.Fluent_Book", "BookDetail_Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("WizLib_Model.Models.Fluent_Book", "BookDetail_Id");
 
                     b.HasOne("WizLib_Model.Models.Fluent_Publisher", "Fluent_Publisher")
                         .WithMany("Fluent_Books")

@@ -16,7 +16,7 @@ namespace WizLib_Model.Models
         public string FirstName { get; set; }
         [Required]
         public string LastName { get; set; }
-        public DateTime? BirthDate{ get; set; }
+        public DateTime? BirthDate { get; set; }
         public string Location { get; set; }
         [NotMapped]
         public string FullName
