@@ -395,3 +395,4 @@ C:\Users\carlos.zazueta\source\repos\WizLib\WizLib\bin\Debug\net5.0\Newtonsoft.J
 C:\Users\carlos.zazueta\source\repos\WizLib\WizLib\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 C:\Users\carlos.zazueta\source\repos\WizLib\WizLib\obj\Debug\net5.0\Razor\Views\Book\Upsert.cshtml.g.cs
 C:\Users\carlos.zazueta\source\repos\WizLib\WizLib\obj\Debug\net5.0\Razor\Views\Book\Details.cshtml.g.cs
+C:\Users\carlos.zazueta\source\repos\WizLib\WizLib\obj\Debug\net5.0\Razor\Views\Book\ManageAuthors.cshtml.g.cs
